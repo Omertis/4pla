@@ -11,9 +11,9 @@ const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
 const http2 = require('http2');
 
-const prefix = "1"
+const prefix = "4"
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
-const discord_token = "NDcwMTExNTY3NDUxNzgzMTc4.DjRhkg.aT1zl6Df3zd6ArWy-GCINatkIec";
+const discord_token = "NDcwMzQwNDU2MDA2Mjg3Mzc2.DjU2Xg.0lDB1CT6xstpIRiXszjYxqDhNcY";
 client.login(discord_token);
 client.on('ready', function () {
     console.log(`Logged in as * [ " ${client.user.username} " ]`);
@@ -474,7 +474,7 @@ client.on('message', message => {
     });
 
 client.on('ready', () => {
-  client.user.setGame('[1help]..[1play]','https://www.twitch.tv/pd13');
+  client.user.setGame('[4help]..[4play]','https://www.twitch.tv/pd13');
 });
 
-client.login("NDcwMTExNTY3NDUxNzgzMTc4.DjRhkg.aT1zl6Df3zd6ArWy-GCINatkIec");
+client.login("NDcwMzQwNDU2MDA2Mjg3Mzc2.DjU2Xg.0lDB1CT6xstpIRiXszjYxqDhNcY");
