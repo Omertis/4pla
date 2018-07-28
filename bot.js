@@ -267,14 +267,14 @@ for help = <@426471752877604874>
 
 client.on('message' , message => {
         if (message.content.startsWith(prefix +"invite")) {
-            if(!message.channel.guild) return message.reply('This Command is Only For Servers');
-         const embed = new Discord.RichEmbed()
+
+		const embed = new Discord.RichEmbed()
      .setColor("RANDOM")
      .setThumbnail(client.user.avatarURL)
      .setAuthor(message.author.username, message.author.avatarURL)
      .setTitle('Click Here To Invite The Bot')
      .setURL('https://discordapp.com/oauth2/authorize?client_id=408640438161899550&scope=bot&permissions=1')
-      message.channel.sendEmbed(embed);
+      message.author.sendEmbed(embed);
        }
     });
 
